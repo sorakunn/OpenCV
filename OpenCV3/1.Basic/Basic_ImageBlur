@@ -1,5 +1,5 @@
-#include<opencv2/highgui/highgui.hpp>										/* 测试形态学运算——“均值滤波”(模糊一幅图像) */
-#include<opencv2/imgproc/imgproc.hpp>										/* blur函数 */
+#include<opencv2/highgui/highgui.hpp>					/* 测试形态学运算——“均值滤波”(模糊一幅图像) */
+#include<opencv2/imgproc/imgproc.hpp>					/* blur函数 */
 using namespace cv;
 
 int main(){
