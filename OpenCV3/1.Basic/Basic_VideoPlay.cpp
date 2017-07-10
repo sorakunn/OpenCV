@@ -25,11 +25,3 @@ int main(){
 	return 0;
 }
 
-/*	c++的基本输入语句：
-	cin：	Console Input	
-	cout：	Console Output	
-	endl：	end of line
-*/
-
-/*	CMake：	crossplatform make	跨平台安装(编译)程序
-*/
