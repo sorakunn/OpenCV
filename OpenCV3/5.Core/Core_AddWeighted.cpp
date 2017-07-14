@@ -1,10 +1,10 @@
-#include <opencv2/opencv.hpp>						/* 两矩阵加权混合 */
-using namespace cv;									/* addWeighted方法 */
+#include <opencv2/opencv.hpp>				/* 两矩阵加权混合 */
+using namespace cv;					/* addWeighted方法 */
 using namespace std;
 int main(){
 	//图像读取
-	Mat backImage = imread("back.jpg");				//混合的两幅图像必须
-	Mat frontImage = imread("front.jpg");			//具有相同的尺寸
+	Mat backImage = imread("back.jpg");		//混合的两幅图像必须
+	Mat frontImage = imread("front.jpg");		//具有相同的尺寸
 	Mat dstImage;
 	if(backImage.empty()){
 		cout << "背景图读取错误" << endl;
