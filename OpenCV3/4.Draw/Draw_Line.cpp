@@ -13,9 +13,9 @@ void DrawLine(Mat img, Point start,Point end){
 //*/
 
 int main(){
-	Mat painting = Mat::zeros(WINDOW_WIDTH, WINDOW_WIDTH, CV_8UC3);									//创建画布
+	Mat painting = Mat::zeros(WINDOW_WIDTH, WINDOW_WIDTH, CV_8UC3);					//创建画布
 	DrawLine(painting,Point(WINDOW_WIDTH/4,WINDOW_WIDTH/2),Point(3*WINDOW_WIDTH/4,WINDOW_WIDTH/2));	//绘制线
-	imshow(WINDOW_NAME,painting);																	//展示图像
+	imshow(WINDOW_NAME,painting);									//展示图像
 	waitKey(0);
 	return 0;
 }
