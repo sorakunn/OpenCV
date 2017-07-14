@@ -35,8 +35,8 @@ void DrawPolygon(Mat img){
 
 	//*创建顶点集ppt
 	const Point* ppt[1] = {rookPoints[0]};			//rookPoints[0]元素为数组指针
-													//声明为 Point (*rookPoint)[20]
-													//即指向“包含20个点的数组”的指针
+								//声明为 Point (*rookPoint)[20]
+								//即指向“包含20个点的数组”的指针
 	//这里的ppt类型为“数组指针”的数组，其内的每个“数组指针”都是一个多边形
 	//const关键字放在了Point*的左边，代表指针所指向的内容是常量
 	//*/
@@ -54,8 +54,8 @@ void DrawPolygon(Mat img){
 
 int main(){
 	Mat painting = Mat::zeros(WINDOW_WIDTH, WINDOW_WIDTH, CV_8UC3);		//创建画布
-	DrawPolygon(painting);												//绘制填充多边形
-	imshow(WINDOW_NAME,painting);										//展示图像
+	DrawPolygon(painting);							//绘制填充多边形
+	imshow(WINDOW_NAME,painting);						//展示图像
 	waitKey(0);
 	return 0;
 }
