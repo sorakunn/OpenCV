@@ -1,5 +1,5 @@
-#include "opencv2/video/tracking.hpp"									/*彩色目标跟踪*/
-#include "opencv2/imgproc/imgproc.hpp"									/*根据鼠标框选区域的色度光谱对摄像机读入的视频目标进行跟踪*/
+#include "opencv2/video/tracking.hpp"			/*彩色目标跟踪*/
+#include "opencv2/imgproc/imgproc.hpp"			/*根据鼠标框选区域的色度光谱对摄像机读入的视频目标进行跟踪*/
 #include "opencv2/highgui/highgui.hpp"
 
 #include <iostream>
