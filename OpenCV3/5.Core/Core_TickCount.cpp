@@ -1,5 +1,5 @@
 #include <opencv2/opencv.hpp>					/* 计时函数 */
-using namespace cv;								/* getTickCount方法、getTickFrequency方法*/
+using namespace cv;						/* getTickCount方法、getTickFrequency方法*/
 using namespace std;
 
 int main(){
