@@ -1,6 +1,6 @@
-#include <opencv2/opencv.hpp>								/* 访问图像中像素(方法二) */
-using namespace cv;											/* MatIterator_<Vec3b>类型, Mat_<Vec3b>::iterator类型 */
-															/* Mat.begin<type>()方法, Mat.end<type>()方法 */
+#include <opencv2/opencv.hpp>							/* 访问图像中像素(方法二) */
+using namespace cv;								/* MatIterator_<Vec3b>类型, Mat_<Vec3b>::iterator类型 */
+										/* Mat.begin<type>()方法, Mat.end<type>()方法 */
 
 void colorReduce(Mat& srcImage, Mat& dstImage, int div){	
 	dstImage = srcImage.clone();
@@ -10,10 +10,10 @@ void colorReduce(Mat& srcImage, Mat& dstImage, int div){
 	switch(channels){
 
 	case 1:{//单通道情况（迭代器设置为uchar类型）
-		MatIterator_<uchar> it;								//第一种定义方式 
-		Mat_<uchar>::iterator itend;						//第二种定义方式
-		it = dstImage.begin<uchar>();						//begin<>();方法返回指向第一个元素的迭代器
-		itend = dstImage.end<uchar>();						//end<>():方法返回指向最后一个元素的迭代器
+		MatIterator_<uchar> it;						//第一种定义方式 
+		Mat_<uchar>::iterator itend;					//第二种定义方式
+		it = dstImage.begin<uchar>();					//begin<>();方法返回指向第一个元素的迭代器
+		itend = dstImage.end<uchar>();					//end<>():方法返回指向最后一个元素的迭代器
 		for(; it!=itend; it++)
 			*it = *it/div*div;
 		break;  
