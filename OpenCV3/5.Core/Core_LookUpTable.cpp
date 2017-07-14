@@ -1,5 +1,5 @@
-#include <opencv2/opencv.hpp>						/* 颜色空间缩减 */
-using namespace cv;									/* LUT方法 */
+#include <opencv2/opencv.hpp>					/* 颜色空间缩减 */
+using namespace cv;						/* LUT方法 */
 
 int main(){
 	//准备工作
