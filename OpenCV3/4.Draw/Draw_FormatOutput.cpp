@@ -1,5 +1,5 @@
-#include <opencv2/opencv.hpp>
-using namespace cv;
+#include <opencv2/opencv.hpp>			/* 矩阵的格式化输出 */
+using namespace cv;				/* format()方法 */
 using namespace std;
 
 
