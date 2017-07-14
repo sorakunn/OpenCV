@@ -1,5 +1,5 @@
-#include <opencv2/core/core.hpp>											/*支持向量机引导*/
-#include <opencv2/highgui/highgui.hpp>								/*使用CvSVM::train函数训练一个SVM分类器*/
+#include <opencv2/core/core.hpp>			/*支持向量机引导*/
+#include <opencv2/highgui/highgui.hpp>			/*使用CvSVM::train函数训练一个SVM分类器*/
 #include <opencv2/ml/ml.hpp>
 
 using namespace cv;
