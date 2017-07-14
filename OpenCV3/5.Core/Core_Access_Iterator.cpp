@@ -51,4 +51,4 @@ int main(){
 	imshow("效果图",dstImage);
 	waitKey(0);
 	return 0;
-}
+} 
