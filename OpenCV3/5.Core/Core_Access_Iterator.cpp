@@ -1,4 +1,4 @@
-#include <opencv2/opencv.hpp>								/* 访问图像中像素（方法二） */
+#include <opencv2/opencv.hpp>								/* 访问图像中像素(方法二) */
 using namespace cv;											/* MatIterator_<Vec3b>类型, Mat_<Vec3b>::iterator类型 */
 															/* Mat.begin<type>()方法, Mat.end<type>()方法 */
 
