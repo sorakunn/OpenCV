@@ -1,10 +1,11 @@
 /**
  * @file objectDetection.cpp
  * @author A. Huaman ( based in the classic facedetect.cpp in samples/c )
- * @brief A simplified version of facedetect.cpp, show how to load a cascade classifier and how to find objects (Face + eyes) in a video stream
+ * @brief A simplified version of facedetect.cpp, show how to load a cascade classifier
+   and how to find objects (Face + eyes) in a video stream
  */
-#include "opencv2/objdetect/objdetect.hpp"					/*人脸识别*/
-#include "opencv2/highgui/highgui.hpp"							/*检测摄像头视频流中的人脸*/
+#include "opencv2/objdetect/objdetect.hpp"				/*人脸识别*/
+#include "opencv2/highgui/highgui.hpp"					/*检测摄像头视频流中的人脸*/
 #include "opencv2/imgproc/imgproc.hpp"
 
 #include <iostream>
