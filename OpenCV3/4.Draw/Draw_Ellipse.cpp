@@ -14,8 +14,8 @@ void DrawEllipse(Mat img, double angle){
 
 int main(){
 	Mat painting = Mat::zeros(WINDOW_WIDTH, WINDOW_WIDTH, CV_8UC3);		//创建画布
-	DrawEllipse(painting,90);											//绘制椭圆
-	imshow(WINDOW_NAME,painting);										//展示图像
+	DrawEllipse(painting,90);						//绘制椭圆
+	imshow(WINDOW_NAME,painting);						//展示图像
 	waitKey(0);
 	return 0;
 }
