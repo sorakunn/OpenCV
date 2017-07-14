@@ -1,10 +1,10 @@
-#include <iostream>															/*支持向量机引导*/
-#include <opencv2/core/core.hpp>								/*讲解训练数据线性不可分时,如何定义支持向量机的最优化问题*/
+#include <iostream>				/*支持向量机引导*/
+#include <opencv2/core/core.hpp>		/*讲解训练数据线性不可分时,如何定义支持向量机的最优化问题*/
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/ml/ml.hpp>
 
-#define	NTRAINING_SAMPLES	100			// Number of training samples per class
-#define FRAC_LINEAR_SEP		0.9f	    // Fraction of samples which compose the linear separable part
+#define	NTRAINING_SAMPLES	100		// Number of training samples per class
+#define FRAC_LINEAR_SEP		0.9f		// Fraction of samples which compose the linear separable part
 
 using namespace cv;
 using namespace std;
