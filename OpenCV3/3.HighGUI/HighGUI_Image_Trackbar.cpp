@@ -1,7 +1,7 @@
-#include <opencv2/opencv.hpp>										/* 为窗口创建控制用的滑动条 */
-#include <opencv2/highgui/highgui.hpp>										
-using namespace cv;															/* createTrackbar方法, on_Trackbar方法, getTrackbarPos方法 */
-#define WINDOW_NAME "线性混合示例"							 /* 原理：通过一个中介函数配合一个回调函数实现 */
+#include <opencv2/opencv.hpp>			/* 为窗口创建控制用的滑动条 */
+#include <opencv2/highgui/highgui.hpp>		/* createTrackbar方法, on_Trackbar方法, getTrackbarPos方法 */
+using namespace cv;				/* 原理：通过一个中介函数配合一个回调函数实现 */
+#define WINDOW_NAME "线性混合示例"		 
 
 //滑动条参数
 const int g_nMaxAlphaValue = 100;
@@ -15,9 +15,9 @@ Mat g_srcImage2;
 Mat g_dstImage;
 
 
-void on_Trackbar(int,void* ){						// 回调函数 onTrackbar( (int)position, (void*)userdata );
-																				//		(1)滑块当前位置
-																				//		(2)用户传入数据  (若使用全局变量则不需传入数据)
+void on_Trackbar(int,void* ){			// 回调函数 onTrackbar( (int)position, (void*)userdata );
+						//(1)滑块当前位置
+						//(2)用户传入数据  (若使用全局变量则不需传入数据)
                                         
 	//AlphaValue与BetaValue的计算
 	g_dAlphaValue = (double)g_nAlphaValueSlider/g_nMaxAlphaValue;
@@ -53,11 +53,11 @@ int main(){
 	createTrackbar("透明值", WINDOW_NAME, &g_nAlphaValueSlider, g_nMaxAlphaValue, on_Trackbar);
 	// createTrackbar("trackbar_name", "window_name", (int*)position, (int)length, (*)on_Trackbar, (void*)userdata);	[int]
 	//！创建一个指定名字的滑动条在指定窗口上,并指定滑块当前位置、滑块最大位置、回调函数
-																							//(1)轨迹条名
-																							//(2)要创建轨迹条的窗口名
-																							//(3)滑块当前位置(创建时作为初始值)	【用&取成指针】
-																							//(4)滑块最大位置
-																							//(5)回调函数 on_Trackbar
+	//(1)轨迹条名
+	//(2)要创建轨迹条的窗口名
+	//(3)滑块当前位置(创建时作为初始值)	【用&取成指针】
+	//(4)滑块最大位置
+	//(5)回调函数 on_Trackbar
   //*/
   
 	on_Trackbar(g_nAlphaValueSlider,0);         //手动执行一次回调函数避免开始时未拖动显示空白
