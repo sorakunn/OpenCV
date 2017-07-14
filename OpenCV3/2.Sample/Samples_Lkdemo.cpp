@@ -1,5 +1,5 @@
-#include "opencv2/video/tracking.hpp"										/*点追踪*/
-#include "opencv2/imgproc/imgproc.hpp"									/*分析出物体上的点并据此追踪物体*/
+#include "opencv2/video/tracking.hpp"			/*点追踪*/
+#include "opencv2/imgproc/imgproc.hpp"			/*分析出物体上的点并据此追踪物体*/
 #include "opencv2/highgui/highgui.hpp"
 
 #include <iostream>
