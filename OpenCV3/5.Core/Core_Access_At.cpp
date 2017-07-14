@@ -1,5 +1,5 @@
-#include <opencv2/opencv.hpp>								/* 访问图像中像素（方法三） */
-using namespace cv;											/* Mat.at<type>()方法 */
+#include <opencv2/opencv.hpp>									/* 访问图像中像素（方法三） */
+using namespace cv;										/* Mat.at<type>()方法 */
 
 void colorReduce(Mat& srcImage, Mat& dstImage, int div){
 	dstImage = srcImage.clone();
